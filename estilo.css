@@ -1,0 +1,44 @@
+html, body, p, h1 {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+html {
+  background-color: gray;
+  height: 100%;
+}
+body {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: auto 1fr auto;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  background-color: white;
+}
+aside, section {
+  width: 100%;
+}
+footer, header {
+  background-color: black;
+  color:white;
+}
+
+header, footer {
+  grid-column: 1/span 2;
+}
+aside {
+  grid-column: 1/span 1;
+  background-color: darkgrey;
+}
+section {
+  grid-column: 2/span 1;
+  background-color: lightgrey;
+}
+h1 {
+  text-align: center;
+  padding: 0.5rem;
+}
+footer p {
+  text-align: center;
+}
